@@ -11,6 +11,11 @@ Running the [trigger image](https://hub.docker.com/r/r6by/trigger-gcp-cloudbuild
 
 ## IAM setup
 
+### Option 1:
+Run `./auth.sh`, providing a unique service account name if desired. #TODO Create SA deletion script.
+
+### Option 2: (manual)
+
 1. Create a GCP service account:
 
     ```console
