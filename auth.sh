@@ -66,7 +66,7 @@ while getopts :h OPT; do
 done
 shift $((OPTIND-1))
 
-# Usage, list, and exec should not happen simultaneously, so elif.
+# Usage, sa_create, roles, and json_key should not happen simultaneously, so elif.
 if [[ ${HELP:-} == 'true' ]]; then
   usage; exit 0
 else
